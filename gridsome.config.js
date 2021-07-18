@@ -5,9 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome Portfolio Starter',
-  siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1',
-  siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
+  siteName: 'ilhan koral | Portfolio',
+  siteDescription: 'Ilhan Koral portfolio site explains about me and my some projects and focuses on content rather than style.',
+  siteUrl: 'https://ikoral.com',
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',
@@ -20,8 +20,8 @@ module.exports = {
         pathPrefix: '/docs', // Add route prefix. Optional
         template: './src/templates/Documentation.vue', // Optional
         plugins: [
-          [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
-      ],
+          ['gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true }]
+        ],
       }
     },
     {
@@ -37,34 +37,7 @@ module.exports = {
         }
       }
     },
-    {
-      use: 'gridsome-plugin-rss',
-      options: {
-        contentTypeName: 'Post',
-        feedOptions: {
-          title: 'Gridsome Portfolio Starter Blog',
-          feed_url: 'https://gridsome-portfolio-starter.netlify.com/rss.xml',
-          site_url: 'https://gridsome-portfolio-starter.netlify.com/'
-        },
-        feedItemOptions: node => ({
-          title: node.title,
-          description: node.summary,
-          url: 'https://gridsome-portfolio-starter.netlify.com' + node.path,
-          author: 'Andre Madarang',
-          date: node.date
-        }),
-        output: {
-          dir: './static',
-          name: 'rss.xml'
-        }
-      }
-    },
-    {
-      use: '@gridsome/plugin-sitemap',
-      options: {
-        cacheTime: 600000, // default
-      }
-    },
+
   ],
   templates: {
     Tag: '/tag/:id'
@@ -72,7 +45,7 @@ module.exports = {
   transformers: {
     remark: {
       plugins: [
-        [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+        ['gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true }]
       ],
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],

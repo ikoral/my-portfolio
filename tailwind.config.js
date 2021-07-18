@@ -28,6 +28,8 @@ module.exports = {
       spacing: {
         '80': '20rem',
         '108': '27rem',
+        '130': '38rem',
+        '140': '42rem'
       },
       borderWidth: {
         '14': '14px',
@@ -37,27 +39,30 @@ module.exports = {
       padding: '1rem'
     },
     colors: {
-      background: {
-        primary: 'var(--bg-background-primary)',
-        secondary: 'var(--bg-background-secondary)',
-        tertiary: 'var(--bg-background-tertiary)',
+      // background: {
+      //   primary: 'var(--bg-background-primary)',
+      //   secondary: 'var(--bg-background-secondary)',
+      //   tertiary: 'var(--bg-background-tertiary)',
 
-        form: 'var(--bg-background-form)',
-      },
+      //   form: 'var(--bg-background-form)',
+      // },
 
-      copy: {
-        primary: 'var(--text-copy-primary)',
-        secondary: 'var(--text-copy-hover)',
-      },
+      // copy: {
+      //   primary: 'var(--text-copy-primary)',
+      //   secondary: 'var(--text-copy-hover)',
+      // },
 
-      'border-color': {
-        primary: 'var(--border-border-color-primary)',
-      },
+      // 'border-color': {
+      //   primary: 'var(--border-border-color-primary)',
+      // },
 
       transparent: 'transparent',
 
       black: '#000',
       white: '#fff',
+      blue: '#1c75bc',
+      'blue-dark': '#064F89',
+      red: '#DC2626',
 
       green: {
         100: '#f0fff4',
